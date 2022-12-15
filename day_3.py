@@ -7,7 +7,6 @@ def task1():
         rucksacks = f.readlines()
     for rucksack in rucksacks:
         compartments = [rucksack[:len(rucksack)//2], rucksack[len(rucksack)//2:]]
-        double = ""
         for item in compartments[0]:
             if item in compartments[1]:
                 priority += getPriority(item)
